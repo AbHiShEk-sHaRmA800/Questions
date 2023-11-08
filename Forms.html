@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forms</title>
+    <style>
+        body {
+            background-color: orange    ;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        /* input {
+            text-align: center;
+           
+            height: 15px;
+            margin-bottom: 10px;
+            border-radius: 1px;
+            border: 2px solid black;
+            margin: 19px 200px;
+        } */
+        input {
+            width: 200px;
+            position: relative;
+            right: -10px;
+            margin: auto;
+            border: 5px solid white;
+            border-radius: 10PX;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        label {
+            font-family: sans-serif;
+            font-size: large;
+            color:black;
+            margin-left: 130px;
+        }
+
+        div {
+            border-radius: 10PX;
+            border: 10px dashed black;
+            background-color: blanchedalmond;
+            margin-top: 200px;
+            margin: 130px 300px;
+        }
+
+        h1 {
+            padding: 30px;
+            margin: 0px 150px;
+        }
+
+
+        form {
+            display: inline;
+            text-align: center;
+        }
+        #submit:hover{
+           margin: auto;
+           background-color: rgb(0, 247, 255);
+        }
+        input [type="submit"]{
+            color: blueviolet;
+            display: block;
+            margin: auto;
+        }
+        #submit{
+            padding: auto;
+        margin:20px 10px;
+            font-size: x-large;
+           background-color:grey;
+        }
+        #color{
+            padding: auto;
+        margin:20px 10px;
+        }
+       input #color{
+            width: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 style="color: orangered;"><b>Registration Form</b></h1>
+        <form action="#">
+            <label for="Name"> First Name:</label>
+            <input type="text" id="Name" placeholder="Enter your First Name">
+            <br>
+            <label for="NameE"> Last Name:</label>
+            <input type="text" id="NameE" placeholder="Enter your Last Name"><br>
+            <label for="NameE1">E-mail:</label>
+            <input type="email" id="NameE1" placeholder="Enter your E-mail"><br>
+            <label for="Password">Password: </label>
+            <input type="password" id="id4" placeholder="Enter your Password"><br>
+
+            <label for="color">Favorite color:</label>
+            <input type="color">
+            <select name="color" id="color">
+                <option value="red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="orange">orange</option>
+                <option value="Pink">Pink</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Black">Black</option>
+
+            </select><br>
+            <label for="submit"> </label>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+
+</html>
